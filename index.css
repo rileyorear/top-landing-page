@@ -67,7 +67,7 @@ p {
   height: 36px;
   width: 96px;
   border-style: none;
-  border-radius: 5%;
+  border-radius: 5%/20%;
   background-color: #3882F6;
   color: white;
   font-weight: bold;
@@ -77,7 +77,9 @@ p {
 .rich {
   width: 512px;
   height: 288px;
-  box-shadow: 0 0px 10px 0 #dedede, 0 0px 10px 0 #dedede;
+  border: 1px solid #dedede;
+  /* border-radius: 2.5%/5%; */
+  box-shadow: 0 0 1em -0.25em #ffffff;
 }
 
 .description {
@@ -115,9 +117,78 @@ p {
   width: 150px;
   background-color: darkslategrey;
   border-radius: 5%;
+  box-shadow: 0 0 1em -0.25em rgb(0, 0, 0);
 }
 
 .section3 {
   height: 450px;
   background-color: #cbcbcb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section3 div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 0px 36px;
+  
+}
+
+#quote {
+  font-size: 36px;
+  font-style: italic;
+}
+
+#quoter {
+  align-self: flex-end;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.section4 {
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section4 .container {
+  background-color: #3882F6;
+  height: 90px;
+  width: 1085px;
+  padding: 20px;
+  margin: 0px 36px;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 1%/9%;
+}
+
+.section4 .container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+h3 {
+  margin: 9px 0px;
+}
+
+.section4 .container div p {
+  color: #dedede;
+}
+
+.section4 .container button {
+  align-self: center;
+  height: 36px;
+  width: 96px;
+  border: 1px solid white;
+  border-radius: 5%/20%;
+  background-color: #3882F6;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
 }
